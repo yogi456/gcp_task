@@ -59,7 +59,7 @@ resource "google_compute_firewall" "default" {
 resource "google_compute_instance" "default22" {
   name         = "test"
   machine_type = "n1-standard-1"
-  zone         = "us-west1-c"
+  zone         = "us-east1-c""
   project=var.production_project
   tags = ["foo", "bar"]
 
